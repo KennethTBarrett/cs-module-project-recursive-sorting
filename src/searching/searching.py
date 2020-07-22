@@ -14,7 +14,7 @@ def binary_search(arr, target, start, end):
     elif target > arr[middle]:
         return binary_search(arr, target, middle+1, end)
 
-# Re-iterating that this approach is logarithmic (O log n)
+# Re-iterating that this approach is logarithmic - O(log n)
 
 # STRETCH: implement an order-agnostic binary search
 # This version of binary search should correctly find 
