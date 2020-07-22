@@ -26,8 +26,8 @@ def merge_sort(arr):
     if len(arr) <= 1:  # This is our base case.
         return arr  # If the array is done with recursion, it'll return it.
     middle = len(arr) // 2  # Calculate the middle element.
-    L = merge_sort(arr[:middle])
-    R = merge_sort(arr[middle:])
+    L = merge_sort(arr[:middle])  # Recursion, left side.
+    R = merge_sort(arr[middle:])  # Recursion, right side.
 
     return merge(L, R)
 
