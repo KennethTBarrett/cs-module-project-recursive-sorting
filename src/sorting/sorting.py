@@ -25,10 +25,10 @@ def merge_sort(arr):
     if len(arr) <= 1:  # This is our base case.
         return arr  # If the array is done with recursion, it'll return it.
     middle = len(arr) // 2  # Calculate the middle element.
-    L = merge_sort(arr[:middle])  # Recursion, left side.
-    R = merge_sort(arr[middle:])  # Recursion, right side.
+    arrA = merge_sort(arr[:middle])  # Recursion, left side.
+    arrB = merge_sort(arr[middle:])  # Recursion, right side.
 
-    return merge(L, R)
+    return merge(arrA, arrB)
 
 # O(n log n) - Linearithmic run time
 # This splits each array into two halves, then takes linear time to merge.
