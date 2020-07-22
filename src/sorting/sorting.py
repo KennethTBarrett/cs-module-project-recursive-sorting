@@ -1,10 +1,9 @@
-# TO-DO: complete the helper function below to merge 2 sorted arrays
 def merge(arrA, arrB):
-    # elements = len(arrA) + len(arrB)
-    # merged_arr = [0] * elements
     i = j = 0  # We need two variables, one for the index of each array.
 
-    array = []  # Array to populate and return.
+    # Array to populate and return.
+    array = []
+
     # This will continue until we've used all elements in one list.
     while i < len(arrA) and j < len(arrB):
         # Let's append the smaller value to the list.
